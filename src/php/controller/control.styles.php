@@ -2,9 +2,11 @@
 
 //MODEL
   //DB
+  require "src/php/model/model.config.php";
 
   //Model Content
-  
+  require "src/php/model/model.styles.php";
+  $listStyles = Styles::afficheStyles();
   //Fin Model Content
 
 

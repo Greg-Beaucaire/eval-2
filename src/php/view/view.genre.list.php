@@ -1,4 +1,5 @@
 <div>
+  <h2>Liste des genres musicaux</h2>
   <ul>
     <?php
     foreach($listGenres as $key => $value){
