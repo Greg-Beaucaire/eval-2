@@ -1,0 +1,87 @@
+$background : #383838;
+$background-dark : #202020;
+$letter : rgb(216, 216, 216);
+$link : rgb(255, 255, 255);
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $letter;
+}
+
+body {
+  height: 100vh;
+  background-color: $background;
+  display: grid;
+  place-items: center;
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: $background-dark;
+
+    > a {
+      text-align: center;
+      text-decoration: none;
+      color: $letter;
+      font-size: 2rem;
+      padding: 1rem;
+      transition: color .3s;
+
+      &:hover {
+        color: $link;
+      }
+    }
+
+    .menu {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      a {
+        text-decoration: none;
+        color: $letter;
+        font-size: 2rem;
+        padding: 1rem;
+        text-transform: uppercase;
+        transition: color .3s;
+
+        &:hover {
+          color: $link;
+        }
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+    height: auto;
+    padding: .5rem;
+    background-color: $background-dark;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-size: 1.3rem;
+
+    a {
+      color: $letter;
+      text-decoration: underline;
+    }
+  }
+
+  main {
+    display: grid;
+    place-items: center;
+  }
+}
+

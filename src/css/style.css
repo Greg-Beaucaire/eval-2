@@ -1,0 +1,94 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #d8d8d8;
+}
+
+body {
+  height: 100vh;
+  background-color: #383838;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+body nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #202020;
+}
+
+body nav > a {
+  text-align: center;
+  text-decoration: none;
+  color: #d8d8d8;
+  font-size: 2rem;
+  padding: 1rem;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+body nav > a:hover {
+  color: white;
+}
+
+body nav .menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body nav .menu a {
+  text-decoration: none;
+  color: #d8d8d8;
+  font-size: 2rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+body nav .menu a:hover {
+  color: white;
+}
+
+body footer {
+  width: 100%;
+  height: auto;
+  padding: .5rem;
+  background-color: #202020;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+body footer a {
+  color: #d8d8d8;
+  text-decoration: underline;
+}
+
+body main {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
