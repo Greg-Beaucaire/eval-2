@@ -3,7 +3,7 @@
   <ul>
     <?php
     foreach($listArtists as $key => $value){
-      $styles = Styles::artistStyles($value['artist_id']);
+      $styles = Artists::artistStyles($value['artist_id']);
       echo "<li><b>".$value['artist_name']."</b> : ";
 
       foreach($styles as $key => $value){

@@ -6,10 +6,8 @@
 
   //Model Content
   require "src/php/model/model.artists.php";
-  require "src/php/model/model.styles.php";
 
     //Affichage de la liste des artistes
-    $listStyles = Styles::afficheStyles();
     $listArtists = Artists::afficheArtists();
 
     //Ajout d'artiste 
