@@ -91,15 +91,24 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     place-items: center;
-  }
 
-  .licence {
-    margin-top: 10rem;
-    margin-bottom: 4rem;
-    grid-area: 1/1/1/3;
-    width: 50vw;
-    font-size: 1.5rem;
-    line-height: 3rem;
+    > * {
+      margin-top: 10rem;
+      margin-bottom: 4rem;
+    }
+
+    #accueil_titre {
+      grid-area: 1/1/1/3;
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+
+    .licence {
+      grid-area: 1/1/1/3;
+      width: 50vw;
+      font-size: 1.5rem;
+      line-height: 3rem;
+    }
   }
 }
 

@@ -1,5 +1,5 @@
 <form action="?genres">
-<h1>Genres</h1>
+<h1>Artistes</h1>
 <h2>Que souhaitez vous faire ?</h2>
 <select name="select_genre" id="select_genres">
 <option value="select_genre_add">Ajouter</option>
