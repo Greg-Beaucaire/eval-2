@@ -11,7 +11,7 @@
 //VIEW
 require "src/php/view/view.header.php";
   // Content
-  require "src/php/view/view.accueil.php";
+  require "src/php/view/view.licence.php";
   //End Content
 require "src/php/view/view.footer.php";
 

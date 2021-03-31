@@ -17,6 +17,10 @@ $route = array_shift($keys); // first one
       include("src/php/controller/control.artists.php");
     break;
 
+    case "licence":
+      include("src/php/controller/control.licence.php");
+    break;
+
     default:
       include("src/php/controller/control.accueil.php");
     break;
