@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
     <!-- Title -->
-    <meta name="description" content="Home description.">
-    <title>Titre site</title>
+    <meta name="description" content="Cameron Findlay vous propose un catalogue de musique">
+    <title>Cameron Findlay</title>
     <meta charset="UTF-8"/>
     <!-- Robots -->
     <meta name="robots" content="index, follow">
@@ -14,6 +14,3 @@
     <link rel="stylesheet" type="text/css" href="src/css/style.css"/>
 </head>
 <body>
-    <script src="src/js/app.js"></script>
-</body>
-</html>
