@@ -1,4 +1,4 @@
-<p>MIT License
+<p class="licence">MIT License
 
 Copyright (c) 2021 jérémie (https://humanize.me)
 

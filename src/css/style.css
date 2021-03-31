@@ -85,6 +85,12 @@ body footer {
 body footer a {
   color: #d8d8d8;
   text-decoration: underline;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+body footer a:hover {
+  color: white;
 }
 
 body main {
@@ -92,3 +98,11 @@ body main {
   display: grid;
   place-items: center;
 }
+
+body .licence {
+  width: 50vw;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

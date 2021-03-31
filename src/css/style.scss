@@ -76,12 +76,24 @@ body {
     a {
       color: $letter;
       text-decoration: underline;
+      transition: color .3s;
+
+      &:hover {
+        color: $link;
+      }
     }
   }
 
   main {
     display: grid;
     place-items: center;
+  }
+
+  .licence {
+    width: 50vw;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    text-align: center;
   }
 }
 
