@@ -18,7 +18,7 @@ $route = array_shift($keys); // first one
     break;
 
     default:
-      include("src/php/controller/control.select.php");
+      include("src/php/controller/control.accueil.php");
     break;
   }
 

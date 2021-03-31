@@ -17,10 +17,14 @@
 
 <body>
   <nav>
-    <h1>Cameron Findlay</h1>
+    <a href="?accueil">
+      <h1>Cameron Findlay</h1>
+    </a>
     <div class="menu">
+      <a href="?accueil">accueil</a>
       <a href="?genres">genres</a>
       <a href="?styles">styles</a>
       <a href="?artists">artists</a>
     </div>
   </nav>
+  <main>
