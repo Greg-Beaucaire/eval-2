@@ -6,13 +6,15 @@
 
   //Model Content
   require "src/php/model/model.artists.php";
+  require "src/php/model/model.styles.php";
 
     //Affichage de la liste des artistes
+    $listStyles = Styles::afficheStyles();
     $listArtists = Artists::afficheArtists();
 
     //Ajout d'artiste 
     if(isset($_POST['select_artist_add_submit'])){
-      Artists::addArtists($_POST['artist_name_add']);
+      Artists::addArtists($_POST['artist_name_add'], $_POST['artist_style_add']);
       header('Location: ?artists');
     }
   //Fin Model Content
