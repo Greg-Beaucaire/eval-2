@@ -28,6 +28,12 @@
       header('Location: ?styles');
     }
 
+    // Modifier liaison style / genre
+    if(isset($_POST['style_genre_submit'])){
+      Styles::linkStyle($_POST['style_genre_link'], $_POST['genre_style_link']);
+      header('Location: ?styles');
+    }
+
   //Fin Model Content
 
 

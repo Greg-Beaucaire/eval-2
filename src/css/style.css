@@ -130,7 +130,23 @@ body main .licence {
 }
 
 body main #style {
-  height: 50vh;
+  width: 40vw;
+  font-size: 1.5rem;
+  height: 80vh;
   overflow-y: scroll;
+}
+
+body main #style > * {
+  margin: 2rem;
+}
+
+body main #style p {
+  line-height: 2rem;
+}
+
+body main #style span {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

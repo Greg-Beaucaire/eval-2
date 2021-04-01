@@ -111,8 +111,24 @@ body {
     }
 
     #style {
-      height: 50vh;
+      width: 40vw;
+      font-size: 1.5rem;
+      height: 80vh;
       overflow-y: scroll;
+
+      > * {
+        margin: 2rem;
+      }
+
+      p {
+        line-height: 2rem;
+      }
+
+      span {
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
     }
   }
 }
