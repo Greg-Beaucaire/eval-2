@@ -4,7 +4,7 @@
   <select name="style_genre_link" id="style_genre_link">
   <?php
   foreach($listStyles as $key => $value){
-    echo "<option value='".$value['style_id']."'>".$value['style_name']."</option>";
+    echo "<option value='".htmlentities($value['style_id'], ENT_QUOTES)."'>".htmlentities($value['style_name'], ENT_QUOTES)."</option>";
   }
   ?>
   </select>
@@ -12,7 +12,7 @@
   <select name="genre_style_link" id="style_genre_add">
   <?php
   foreach($listGenres as $key => $value) {
-    echo "<option value='".$value['genre_id']."'>".$value['genre_name']."</option>";
+    echo "<option value='".htmlentities($value['genre_id'], ENT_QUOTES)."'>".htmlentities($value['genre_name'], ENT_QUOTES)."</option>";
   }
   ?>
   </select>

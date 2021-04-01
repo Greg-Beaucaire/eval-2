@@ -6,7 +6,7 @@
   <select name="style_genre_add" id="style_genre_add">
   <?php
   foreach($listGenres as $key => $value) {
-    echo "<option value='".$value['genre_id']."'>".$value['genre_name']."</option>";
+    echo "<option value='".htmlentities($value['genre_id'], ENT_QUOTES)."'>".htmlentities($value['genre_name'], ENT_QUOTES)."</option>";
   }
   ?>
   </select>

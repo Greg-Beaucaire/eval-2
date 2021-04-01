@@ -4,10 +4,10 @@
     <?php
     foreach($listArtists as $key => $value){
       $styles = Artists::artistStyles($value['artist_id']);
-      echo "<li><b>".$value['artist_name']."</b> : ";
+      echo "<li><b>".htmlentities($value['artist_name'], ENT_QUOTES)."</b> : ";
 
       foreach($styles as $key => $value){
-        echo $value['style_name']." ";
+        echo htmlentities($value['style_name'], ENT_QUOTES)." ";
       }
       echo "</li>";
     }

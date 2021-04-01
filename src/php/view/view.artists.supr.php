@@ -4,7 +4,7 @@
 <select name="artist_id_supr" id="artist_id_supr">
   <?php
     foreach($listArtists as $key => $value){
-      echo "<option value=".$value['artist_id'].">".$value['artist_name']."</option>";
+      echo "<option value=".htmlentities($value['artist_id'], ENT_QUOTES).">".htmlentities($value['artist_name'], ENT_QUOTES)."</option>";
     }
   ?>
 </select>

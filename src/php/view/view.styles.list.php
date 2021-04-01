@@ -2,15 +2,15 @@
   <h2>Liste des styles musicaux classés par genre</h2>
     <?php
     $genre = $listStyles[0]['genre_name'];
-    echo "<p><span>".$listStyles[0]['genre_name']."</span> : ";
+    echo "<p><span>".htmlentities($listStyles[0]['genre_name'], ENT_QUOTES)."</span> : ";
     foreach($listStyles as $key => $value){
       if($value['genre_name'] == $genre){
-        echo $value['style_name']." | ";
+        echo htmlentities($value['style_name'], ENT_QUOTES)." | ";
       }
 
       else {
-        echo "</p><p><span>".$value['genre_name']."</span> : ";
-        echo $value['style_name']." | ";
+        echo "</p><p><span>".htmlentities($value['genre_name'], ENT_QUOTES)."</span> : ";
+        echo htmlentities($value['style_name'], ENT_QUOTES)." | ";
       }
 
       $genre = $value['genre_name'];

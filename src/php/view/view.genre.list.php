@@ -3,7 +3,7 @@
   <ul>
     <?php
     foreach($listGenres as $key => $value){
-      echo "<li>".$value['genre_name']."</li>";
+      echo "<li>".htmlentities($value['genre_name'], ENT_QUOTES)."</li>";
     }
     ?>
   </ul>

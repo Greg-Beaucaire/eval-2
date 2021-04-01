@@ -5,7 +5,7 @@
   <?php
   $styles = Artists::artistStyles($_POST['select_artist_style_supr']);
   foreach($styles as $key => $value){
-    echo "<option value='".$value['style_id']."'>".$value['style_name']."</option>";
+    echo "<option value='".htmlentities($value['style_id'], ENT_QUOTES)."'>".htmlentities($value['style_name'], ENT_QUOTES)."</option>";
   }
   ?>
   </select>

@@ -4,7 +4,7 @@
   <select name="select_style_supr" id="style_mod">
     <?php
     foreach($listStyles as $key => $value){
-      echo "<option value='".$value['style_id']."'>".$value['style_name']."</option>";
+      echo "<option value='".htmlentities($value['style_id'], ENT_QUOTES)."'>".htmlentities($value['style_name'], ENT_QUOTES)."</option>";
     }
     ?>
   </select>

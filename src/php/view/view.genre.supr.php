@@ -4,7 +4,7 @@
 <select name="select_genre_supr" id="select_genre_mod" required>
   <?php
   foreach($listGenres as $key => $value){
-    echo "<option value='".$value['genre_id']."'>".$value['genre_name']."</option>";
+    echo "<option value='".htmlentities($value['genre_id'], ENT_QUOTES)."'>".htmlentities($value['genre_name'], ENT_QUOTES)."</option>";
   }
   ?>
 </select>

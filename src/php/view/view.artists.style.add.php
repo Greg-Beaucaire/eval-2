@@ -4,7 +4,7 @@
   <select name="select_artist_style_add" id="select_artist_style_add" required>
   <?php
   foreach($listArtists as $key => $value){
-    echo "<option value='".$value['artist_id']."'>".$value['artist_name']."</option>";
+    echo "<option value='".htmlentities($value['artist_id'], ENT_QUOTES)."'>".htmlentities($value['artist_name'], ENT_QUOTES)."</option>";
   }
   ?>
   </select>
@@ -12,7 +12,7 @@
   <select name="select_style_artist_add" id="select_style_artist_add" required>
   <?php
   foreach($listStyles as $key => $value){
-    echo "<option value='".$value['style_id']."'>".$value['style_name']."</option>";
+    echo "<option value='".htmlentities($value['style_id'], ENT_QUOTES)."'>".htmlentities($value['style_name'], ENT_QUOTES)."</option>";
   }
   ?>
   </select>
