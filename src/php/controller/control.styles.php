@@ -22,6 +22,11 @@
       header('Location: ?styles');
     }
 
+    // Supprimer un style
+    if(isset($_POST['select_style_supr_submit'])){
+      Styles::suprStyle($_POST['select_style_supr']);
+      header('Location: ?styles');
+    }
 
   //Fin Model Content
 
@@ -47,7 +52,7 @@ require "src/php/view/view.header.php";
     }
 
     // Supprimer un style
-    if($_POST['select_style'] == 'select_style_supr') {
+    if($_POST['select_style'] == 'select_style_del') {
       require "src/php/view/view.style.supr.php";
     }
 

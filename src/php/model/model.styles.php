@@ -62,4 +62,30 @@ class Styles
       exit("❌🙀❌ OOPS :\n" . $e->getMessage());
     }
   }
+
+  public static function suprStyle($styleId) {
+    try {
+      $pdo = new PDO(DB_DRIVER . ":host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=" . DB_CHARSET, DB_LOGIN, DB_PASS, DB_OPTIONS);
+      $requete = "DELETE FROM `assoc_as`
+                  WHERE assoc_s_id = :styleId";
+      $prepare = $pdo->prepare($requete);
+      $prepare->execute(array(
+        ':styleId' => $styleId
+      ));      
+    } catch (PDOException $e) {
+      exit("❌🙀❌ OOPS :\n" . $e->getMessage());
+    }
+
+    try {
+      $pdo = new PDO(DB_DRIVER . ":host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=" . DB_CHARSET, DB_LOGIN, DB_PASS, DB_OPTIONS);
+      $requete = "DELETE FROM `styles`
+                  WHERE style_id = :styleId";
+      $prepare = $pdo->prepare($requete);
+      $prepare->execute(array(
+        ':styleId' => $styleId
+      ));      
+    } catch (PDOException $e) {
+      exit("❌🙀❌ OOPS :\n" . $e->getMessage());
+    }
+  }
 }
