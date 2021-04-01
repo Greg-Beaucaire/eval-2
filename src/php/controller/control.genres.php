@@ -19,6 +19,12 @@
     Genres::modGenre($_POST['genre_id_mod_final'], $_POST['genre_name_mod_final']);
     header('Location: ?genres');
   }
+  
+  // Supprimer un genre
+  if(isset($_POST['select_genre_supr_submit'])){
+    Genres::suprGenre($_POST['select_genre_supr']);
+    header('Location: ?genres');
+  }
   //Fin Model Content
 
 
