@@ -1,4 +1,4 @@
-<form action="?genres">
+<form action="?genres" method="POST">
 <h1>Genres</h1>
 <h2>Que souhaitez vous faire ?</h2>
 <select name="select_genre" id="select_genres">

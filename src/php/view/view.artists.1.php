@@ -5,6 +5,8 @@
 <option value="select_artist_add">Ajouter</option>
 <option value="select_artist_mod">Modifier</option>
 <option value="select_artist_del">Supprimer</option>
+<option value="select_style_artist_add">Ajouter un style à un artiste</option>
+<option value="select_style_artist_del">Enlever un style à un artiste</option>
 </select>
 <input type="submit" value="Go" name="select_artist_submit">
 </form>

@@ -6,7 +6,7 @@
 <select name="artist_style_add" id="artist_style_add">
   <?php
     foreach($listStyles as $key => $value){
-      echo "<option value=".$value['style_id'].">".$value['style_name']."<option>";
+      echo "<option value=".$value['style_id'].">".$value['style_name']."</option>";
     }
   ?>
 </select>
