@@ -1,4 +1,4 @@
-<div>
+<div id="style">
   <h2>Liste des styles musicaux</h2>
   <ul>
     <?php
