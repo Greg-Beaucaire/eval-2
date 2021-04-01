@@ -28,6 +28,8 @@ body nav {
   display: -ms-flexbox;
   display: flex;
   background-color: #202020;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
 }
 
 body nav > a {
@@ -119,6 +121,10 @@ body main #accueil_titre {
   line-height: 3rem;
 }
 
+body main #accueil_titre span {
+  color: white;
+}
+
 body main .licence {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -129,15 +135,93 @@ body main .licence {
   line-height: 3rem;
 }
 
+body main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40vw;
+  font-size: 1.5rem;
+  max-height: 80vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: #202020;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
+}
+
+body main div::-webkit-scrollbar {
+  display: none;
+}
+
+body main div b {
+  color: white;
+  text-transform: uppercase;
+}
+
+body main div h2 {
+  margin: 2rem 0 0 0;
+  color: white;
+  text-align: center;
+}
+
+body main div ul {
+  margin: 3rem 0 3rem 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+body main div ul * {
+  line-height: 2rem;
+}
+
 body main #style {
+  display: block;
   width: 40vw;
   font-size: 1.5rem;
   height: 80vh;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: #202020;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
+}
+
+body main #style::-webkit-scrollbar {
+  display: none;
 }
 
 body main #style > * {
   margin: 2rem;
+}
+
+body main #style h2 {
+  color: white;
+  text-align: center;
 }
 
 body main #style p {
@@ -145,8 +229,73 @@ body main #style p {
 }
 
 body main #style span {
+  color: white;
   font-size: 2rem;
   text-transform: uppercase;
-  text-decoration: underline;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+body main form {
+  max-width: 45vw;
+  background-color: #202020;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
+  padding: 3rem;
+}
+
+body main form h1, body main form h2 {
+  color: white;
+}
+
+body main form h1 {
+  border-bottom: 1px solid #d8d8d8;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+body main form h2 {
+  font-size: 2rem;
+  margin: 2rem 0 2rem 0;
+}
+
+body main form select {
+  padding: .5rem 1rem .5rem 1rem;
+  outline: none;
+  border: none;
+}
+
+body main form input[type=text] {
+  text-align: center;
+  padding: .5rem 1rem .5rem 1rem;
+  outline: none;
+  border: none;
+}
+
+body main form input[type=submit] {
+  border: none;
+  outline: none;
+  background: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #d8d8d8;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+body main form input[type=submit]:hover {
+  color: white;
+}
+
+body main form label {
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

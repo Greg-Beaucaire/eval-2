@@ -48,7 +48,6 @@
 //VIEW
 require "src/php/view/view.header.php";
   // Content
-    require "src/php/view/view.artists.list.php";
     if(!isset($_POST['select_artist_submit']) && !isset($_POST['select_artist_mod_submit']) && !isset($_POST['select_artist_style_supr_submit'])) {
       require "src/php/view/view.artists.1.php";
     }
@@ -91,7 +90,9 @@ require "src/php/view/view.header.php";
       require "src/php/view/view.artists.style.supr.2.php";
     }
     
+    require "src/php/view/view.artists.list.php";
   //End Content
+  
 require "src/php/view/view.footer.php";
 
 ?>

@@ -31,8 +31,6 @@
 //VIEW
 require "src/php/view/view.header.php";
   // Content
-  require "src/php/view/view.genre.list.php";
-
   if(!isset($_POST['select_genre_submit']) && !isset($_POST['select_genre_mod_submit'])){
     require "src/php/view/view.genre.1.php";
   }
@@ -60,5 +58,7 @@ require "src/php/view/view.header.php";
     $genre = Genres::genreById($_POST['select_genre_mod']);
     require "src/php/view/view.genre.mod.2.php";
   }
+
+  require "src/php/view/view.genre.list.php";
   //End Content
 require "src/php/view/view.footer.php";

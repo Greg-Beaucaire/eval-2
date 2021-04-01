@@ -40,7 +40,6 @@
 //VIEW
 require "src/php/view/view.header.php";
   // Content
-  require "src/php/view/view.styles.list.php";
 
   if(!isset($_POST['select_style_submit']) && !isset($_POST['select_style_mod_submit'])){
     require "src/php/view/view.styles.1.php";
@@ -73,6 +72,9 @@ require "src/php/view/view.header.php";
     $style = Styles::styleById($_POST['select_style_mod']);
     require "src/php/view/view.style.mod.2.php";
   }
+  
+  require "src/php/view/view.styles.list.php";
+
   //End Content
 require "src/php/view/view.footer.php";
 

@@ -1,1 +1,1 @@
-<h1 id="accueil_titre">Bienvenue sur votre catalogue</h1>
+<h1 id="accueil_titre">Bienvenue sur votre catalogue, <span>Cameron</span> !</h1>
